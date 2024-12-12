@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,25 +11,17 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
 div {
     border: 1px solid red;
 }
 
-.header{
-    display: flex; 
-    flex-direction: row;
-    gap: 8px;
-    padding: 4px 16px;
-    background-color: #1f2937; 
+.content{
+    max-width: 960px;
+    margin: auto;
+    padding: 12px 12px;
 }
 
-.right-links {
-    margin-left: auto; 
-    display: flex; 
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-}
 .container {
     display: flex;
     flex: 1;
@@ -61,12 +54,12 @@ div {
     color: black;
 }
 
-.footer {
-    display: flex;
-    flex: 1 0 1;
-    flex-direction: column;
+.right-links {
+    margin-left: auto; 
+    display: flex; 
+    flex-direction: row;
+    gap: 24px;
     align-items: center;
-    justify-content: center;
 }
 
 .curved-box {
@@ -101,7 +94,13 @@ div {
     color: #1f2937;
 }
 
-.content{
-    max-width: 960px;
-    margin: auto;
+.call-to-arms {
+    border: 0px solid lightskyblue;
+    background: lightskyblue;
+    border-radius: 14px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 24px;
+    width: 600px;
+    height: 150px;
 }
